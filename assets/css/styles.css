@@ -196,7 +196,6 @@
   @media screen and (max-width:760px){
     .wrap{padding:0 18px;}
     header.hero{padding:48px 0 56px;}
-    .grid,.seasons,.tip-grid,.storewrap,.settle-grid,.storebox .storewrap,.hgrid{grid-template-columns:1fr !important;}
     section{padding:42px 0 6px;}
     .tips{padding:26px 22px 22px;}
     .flagkey{padding:22px 20px 14px;}
@@ -336,6 +335,10 @@ img{max-width:100%;height:auto;}
   .meta{color:#5c6862;}
   .stars{color:#8a6a10;}
   .store .smeta{color:#4f5a55;}
-  footer{color:#5c6862;}
   .card .cphone a,.store .sphone a,.beachrent a,.brnote a{color:var(--coral);text-decoration:none;}
   .card .cphone a:hover,.store .sphone a:hover{text-decoration:underline;}
+
+  /* keep cards side-by-side down to small-tablet width; single column only on phones */
+  @media screen and (max-width:560px){
+    .grid,.seasons,.tip-grid,.storewrap,.settle-grid,.hgrid{grid-template-columns:1fr !important;}
+  }
